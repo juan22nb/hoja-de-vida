@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoja de vida</title>
+</head>
+<style type="text/Css">
+    .contenedor{
+            width: 100%;
+            min-width: 400px;
+            max-width: 1333px;
+            margin-bottom: 0px;
+            margin:auto;
+        }
+        table#j1{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+       }
+       table#j2{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+       }
+       p{
+        word-spacing: 10px;
+       }
+       font#nacionalidad{
+        word-spacing: 90px;
+       }
+    table{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+     table#DatosP{
+        width: 100%;
+        margin: auto;
+     border:1px solid black;
+     border-collapse: collapse;
+     box-shadow: 5px 5px 0px black;
+     }
+    table#Encabezado{
+        width: 100%;
+        margin:auto;
+    border: 1px solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0px  black;
+    }
+    table#TB{
+        width: 100%;
+        margin:auto;
+     border:1px solid black;
+     border-collapse: collapse;
+     }
+    table#EBM{
+
+     border:1px solid black;
+     border-collapse: collapse;
+     border-radius: 20px;
+     }
+     table#FormacionA{
+        width: 100%;
+        margin:auto;
+     border:1px solid black;
+     border-collapse: collapse;
+     box-shadow:5px 5px 0px  black ;
+     }
+     table#dita{
+     border:1px solid black;
+     border-collapse: collapse;
+     }
+     table#idioma{
+        width: 50%;
+        margin: auto;
+     border:1px solid black;
+     border-collapse: collapse;
+     }
+     @media (max-width:600px) {
+        .contenedor{
+            width: 550px;
+            margin: auto;
+            font-size: small;
+        }
+        td#sexo{
+            word-spacing: 10px;
+        }
+        font#nacionalidad{
+            word-spacing: normal;
+        }
+        table#Encabezado font{
+            width:100%;
+            font-size: small;
+        }
+        table#Encabezado input{
+            width: 50px;
+        }
+        table#DatosP{
+            font-size: xx-small;
+        }
+        table#j1 font{
+          font-size: small;
+        }
+        table#j1{
+          margin-left: 10px;
+        }
+        table#j2 font{
+          font-size: small;
+        }
+        table#j2{
+          margin-left: 10px;
+        }
+        img{
+            width: 100px;
+            height: auto;
+        }
+        table#FA{
+            width: 600px;
+        }
+     }
+    </style>
+<body>
+    <div class="contenedor">
+        <table frome="box" id="Encabezado">
+            <tr>
+                <th style="width: 20%;" align="center" id="escudo"><img
+                        src="https://th.bing.com/th/id/OIP.K8j32P4AArPdUaQChBPSmAHaEo?pid=ImgDet&rs=1" width="150px"
+                        height="auto" id="logo">
+                    <br>Libertad y Orden
+                </th>
+                <th align="center">
+                    <font size="4">Formato Unico</font>
+                    <br>
+                    <font size="6"><strong>Hoja de Vida</strong></font>
+                    <br>
+                    <font size="3">Persona natural</font>
+                    <br>
+                    <font size="2">(leyes 190 de 1995, 489 y 443 de 1998)</font>
+                </th>
+                <th style="width: 20%;">
+                    <font size="1"><i>Entidad receptora</i></font><br><input type="text">
+                </th>
+            </tr>
+        </table>
+        <table bgcolor="black" id="j1">
+            <tr>
+                <th>
+                    <font face="Arial" size="5" color="white">1. Datos Personales</font>
+                </th>
+            </tr>
+        </table>
+        <table border="1" id="DatosP" bgcolor="#EAF2F8">
+            <tr>
+                <td colspan="3" style="width: 33%;">
+                    <font size="2"><i>PRIMER APELLIDO</i></font>
+                    <br> <input type=text style="width: 90% ;background-color: #EAF2F8; border:none; outline: none;"
+                        placeholder="Digite el primer apellido">
+                </td>
+                <td colspan="4" style="width: 33%;">
+                    <font size="2"><i>SEGUNDO APELLIDO (O DE CASADA)</i></font>
+                    <br><input type=text style="width: 90%;background-color: #EAF2F8; border:none; outline: none;"
+                        placeholder="Digite el segundo apellido">
+                </td>
+                <td colspan="3" style="width: 34%;">
+                    <font size="2"><i>NOMBRES</i></font>
+                    <br><input type=text style="width: 90%;background-color: #EAF2F8; border:none; outline: none;"
+                        placeholder="Digite los nombres">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <font size="2"><i>DOCUMENTO DE IDENTIFICACION</i></font>
+                    <br>
+                    <font size="2">C.C</font><input type="radio">&nbsp;&nbsp;<font size="2">C.E</font><input
+                        type="radio"> &nbsp;&nbsp;<font size="2">PAS</font><input type="radio">&nbsp;&nbsp;<font
+                        size="2">No.</font><input type="number" style="width: 50%;"
+                        placeholder="Digite el numero de identificacion">
+                </td>
+                <td style="width: 12%;" id="sexo">
+                    <font size="2"><i>SEXO</i></font>
+                    <br><font size="2">F</font><input type="radio"><font size="2">M</font><input
+                        type="radio">
+                </td>
+                <td colspan="4">
+                    <font size="2" id="nacionalidad"><i>NACIONALIDAD PAIS</i></font>
+                    <br>&nbsp;<font size="2">COL.</font> <input type="radio">&nbsp;&nbsp;<font size="2">EXTRANJERO
+                    </font><input type="radio">&nbsp;<input type="text" style="width: 25%;"
+                        placeholder="Digite el pais">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <font size="2"><i>LIBRETA MILITAR</i></font>
+                    <br>&nbsp;<font size="2"><i>PRIMERA CLASE</i></font>&emsp;<input
+                        type="radio">&emsp;&emsp;&emsp;&emsp;<font size="2"><i>SEGUNDA CLASE</i></font>&emsp;<input
+                        type="radio"> &emsp;&emsp;<font size="2"><i>NUMERO</i></font>&emsp;<input type="number"
+                        style="width: 15%;" placeholder="Digite el numero">&emsp;&emsp;<font size="2"><i>D.M</i></font>
+                    &emsp;<input type="text" style="width: 15%;" placeholder="Digite el D.M">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <font size="2"><i>FECHA Y LUGAR DE NACIMIENTO</i></font>
+                    <br>
+                    <br>&emsp;<font size="2">FECHA</font>&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="date">
+                    <br>&emsp;<font size="2">PAIS</font>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="text"
+                        placeholder="Digite el pais de nacimiento" style="width: 50%;">
+                    <br>&emsp;<font size="2">DEPTO</font> &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;<input type="text"
+                        placeholder="Digite el Departamento de nacimiento" style="width: 50%;">
+                    <br>&emsp;<font size="2">MUNICIPIO</font>&nbsp;&nbsp;&nbsp;&emsp;&nbsp;<input type="text"
+                        placeholder="Digite el Municipio de nacimiento" style="width: 50%;">
+                </td>
+                <td colspan="4">
+                    <font size="2"><i>DIRECCION DE CORRESPONDENCIA</i></font>
+                    <br>
+                    <br>&nbsp;<input type="text" style="width: 60%;" placeholder="Digite la direccion">
+                    <br>&nbsp;<font size="2">PAIS</font>&emsp;&emsp;&nbsp;&emsp;&nbsp;<input type="text"
+                        style="width: 30%;" placeholder="Digite el pais">&emsp;<font size="2">DEPTO</font>&nbsp;<input
+                        type="text" style="width: 22%;" placeholder="Digite el depto">
+                    <br>&nbsp;<font size="2">MUNICIPIO</font>&emsp;<input type="text" style="width: 40%;"
+                        placeholder="Digite el municipio">
+                    <br>&nbsp;<font size="2">TELEFONO</font>&emsp;<input type="number" style="width: 30%;"
+                        placeholder="Digite el telefono">&emsp;<font size="2">EMAIL</font>&nbsp;&nbsp;<input
+                        type="email" style="width: 22%;" placeholder="Digite el Email">
+                </td>
+            </tr>
+        </table>
+        <table bgcolor="black" id="j2">
+            <tr>
+                <th>
+                    <font face="Arial" size="5" color="white">2. Formacion Academica</font>
+                </th>
+            </tr>
+        </table>
+        <table border="1" id="FormacionA" bgcolor="#EAF2F8">
+            <tr>
+                <td>
+                    <font size="2">EDUCACION BASICA Y MEDIA</font>
+                    <br>
+                    <font size="2">SELECCIONE EL ULTIMO GRADO APROBADO (LOS GRADOS DE 1o. A 6o. DE BACHILLERATO
+                        EQUIVALEN A LOS GRADOS DE 6o. A 11. DE EDUCACION BASICA, SECUNDARIA Y MEDIA)</font>
+                    <br>
+                    <table border="1" style="width: 65%;" align="center" id="EBM">
+                        <tr>
+                            <td colspan="11" align="center" bgcolor="#D4E6F1">
+                                <font size="2"><i>EDUCACION BASICA</i></font>
+                            </td>
+                            <td bgcolor="white">
+                                <font size="2"><i>&emsp;TITULO OBTENIDO</i></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#D4E6F1">
+                            <td style="width: 10%;" colspan="5" align="center">
+                                <font size="2"><i>PRIMARIA</i></font>
+                            </td>
+                            <td style="width: 10%;" colspan="4" align="center">
+                                <font size="2"><i>SECUNDARIA</i></font>
+                            </td>
+                            <td style="width: 10%;" colspan="2" align="center">
+                                <font size="2"><i>MEDIA</i></font>
+                            </td>
+                            <td style="width: 40%;" colspan="1">
+                                <font size="2"><i>&emsp;FECHA DE GRADO</i></font>
+                            </td>
+                        </tr>
+                        <tr align="center" bgcolor="white">
+                            <td>1o.<br><input type="checkbox"></td>
+                            <td>2o.<br><input type="checkbox"></td>
+                            <td>3o.<br><input type="checkbox"></td>
+                            <td>4o.<br><input type="checkbox"></td>
+                            <td>5o.<br><input type="checkbox" value="1o."></td>
+                            <td>6o.<br><input type="checkbox" value="1o."></td>
+                            <td>7o.<br><input type="checkbox" value="1o."></td>
+                            <td>8o.<br><input type="checkbox" value="1o."></td>
+                            <td>9o.<br><input type="checkbox" value="1o."></td>
+                            <td>10.<br><input type="checkbox" value="1o."></td>
+                            <td>11.<br><input type="checkbox" value="1o."></td>
+                            <td>
+                                <font size="2"><i>MES</i></font> <select>
+                                    <option value=""></option>
+                                    <option value="">Enero</option>
+                                    <option value="">Febrero</option>
+                                    <option value="">Marzo</option>
+                                    <option value="">Abril</option>
+                                    <option value="">Mayo</option>
+                                    <option value="">Junio</option>
+                                    <option value="">Julio</option>
+                                    <option value="">Agosto</option>
+                                    <option value="">Septiembre</option>
+                                    <option value="">Octubre</option>
+                                    <option value="">Noviembre</option>
+                                    <option value="">Diciembre</option>
+                                </select>&nbsp;<font size="2"><i>AÑO</i>&nbsp;</font><input type="number"
+                                    style="width: 15%;">
+                            </td>
+                        </tr><br>
+                    </table>
+                </td>
+            <tr>
+                <td align="left" rowspan="2" id="usa">
+                    <font size="2">EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)</font>
+                    <br>
+                    <font size="2">DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLOGICO. EN MODALIDAD ACADEMICA ESCRIBA:
+                    </font>
+                    <br>
+                    <br>
+                    <p><font size="2">TC(TECNICA)</font><font size="2">
+                        TL(TECNOLOGIA)</font>
+                    <font size="2">TE(TECNICA ESPECIALIZADA)</font>
+                    <font size="2">UN(UNIVERSITARIA)</font> 
+                        <font size="2">ES(ESPECIALIZACION)</font>
+                    <font size="2">MG(MAESTRIA O MAGISTER)</font>
+                    <font size="2">DOC(DOCTORADO)</font>&nbsp;
+                    </p>
+                    <br>
+                    <font size="2">RELACIONE AL FRENTE EL NUMERO DE LA TARJETA PROFESIONAL (SI ESTA HA SIDO PREVISTA EN
+                        UNA LEY)</font>
+                    <br>
+                    <table border="1" id="TB">
+                        <tr bgcolor="#D4E6F1">
+                            <td rowspan="2" align="center">
+                                <font size="2"><i>MODALIDAD ACADEMICA&nbsp;</i></font>
+                            </td>
+                            <td rowspan="2" align="center">
+                                <font size="2"><i>No. DE SEMESTRES APROBADOS</i></font>
+                            </td>
+                            <td colspan="2" align="center">
+                                <font size="2"><i>GRADUDADO</i></font>
+                            </td>
+                            <td rowspan="2" align="center">
+                                <font size="2"><i>NOMBRE DE LOS ESTUDIOS O TITULOS OBTENIDOS</i></font>
+                            </td>
+                            <td colspan="5" align="center">
+                                <font size="2"><i>TERMINACION</i></font>
+                            </td>
+                            <td rowspan="2" align="center">
+                                <font size="2"><i>No. DE TARJETA PROFESIONAL</i></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#D4E6F1">
+                            <td colspan="1" align="center">
+                                <font size="2"><i>SI</i></font>
+                            </td>
+                            <td colspan="1" align="center">
+                                <font size="2"><i>NO</i></font>
+                            </td>
+                            <td colspan="1" align="center">
+                                <font size="2"><i>MES</i></font>
+                            </td>
+                            <td colspan="4" align="center">
+                                <font size="2"><i>AÑO</i></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td></td>
+                            <td></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="#D4E6F1">
+                            <td></td>
+                            <td></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td></td>
+                            <td></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="#D4E6F1">
+                            <td></td>
+                            <td></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>  </td>
+                            <td>  </td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td align="center"><input type="checkbox"></td>
+                            <td>  </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> <br>
+                    </table>
+                    <table border="1" style="width: 100%;" align="center" id="dita" bgcolor="#EAF2F8">
+                        <tr>
+                            <td>
+                                <font size="2">ESPECIFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE
+                                    FORMA, REGULAR (R), BIEN (B), MUY BIEN (MB).</font>
+                                <br>
+                                <table border="1" id="idioma">
+                                    <tr bgcolor="#D4E6F1">
+                                        <td rowspan="2" align="center" style="width: 40%;">
+                                            <font size="2"><i>IDIOMA</i></font>
+                                        </td>
+                                        <td colspan="3" align="center">
+                                            <font size="2"><i>LO HABLA</i></font>
+                                        </td>
+                                        <td colspan="3" align="center">
+                                            <font size="2"><i>LO LEE</i></font>
+                                        </td>
+                                        <td colspan="3" align="center">
+                                            <font size="2"><i>LO ESCRIBE</i></font>
+                                        </td>
+                                    </tr>
+                                    <tr bgcolor="#D4E6F1">
+                                        <td align="center">
+                                            <font size="2"><i>R</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>B</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>MB</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>R</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>B</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>MB</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>R</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>B</i></font>
+                                        </td>
+                                        <td align="center">
+                                            <font size="2"><i>MB</i></font>
+                                        </td>
+
+                                    </tr>
+                                    <tr bgcolor="white">
+                                        <td></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                    </tr>
+                                    <tr bgcolor="white">
+                                        <td></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                        <td align="center"><input type="radio"></td>
+                                    </tr><br>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+    </div>
+</body>
+
+</html>
